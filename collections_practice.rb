@@ -11,3 +11,21 @@ def swap_elements(array)
   array
 end
 
+def kesha_maker(array)
+  array.collect do |element|
+    element[2] = "$"
+    element
+  end
+end
+
+def greater_and_less_than_10(array)
+  hash = {"greater_and_less_than_10" => [,]"less_than_10" => []}
+  array.each do |number|
+    if number > 10
+      hash["greater_and_less_than_10"] << number
+    else
+      hash["less_than_10"] << number
+    end
+  end
+  hash
+end
