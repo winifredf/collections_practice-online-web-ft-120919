@@ -71,7 +71,7 @@ def organize_songs_by_artist(track)
     if hash.include?(artist)
       hash[artist] << trackname
     else
-      hash[artist] = << trackname
+      hash[artist] = [] << trackname
     end
   end
   hash
