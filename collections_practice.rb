@@ -29,3 +29,36 @@ def greater_and_less_than_10(array)
   end
   hash
 end
+
+def find_winners(hash)
+  winners = []
+  hash.each do |name, status|
+    winners << name if status == "winner"
+  end
+  winners
+end
+
+def find_a(array)
+  array.collect.with.index do |word, index|
+    if index == 1
+      word
+    else
+      word + "s"
+    end
+  end
+end
+
+def count_words(words)
+  story_count = Hash.new
+  
+  words.split.each do |word|
+    if story_count.include?(word)
+      story_count[word] = story_count[word]
+    else
+      story_count[word] = 1
+    end
+  end
+  
+  story_count
+end
+
