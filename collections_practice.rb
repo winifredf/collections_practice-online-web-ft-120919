@@ -19,7 +19,7 @@ def kesha_maker(array)
 end
 
 def greater_and_less_than_10(array)
-  hash = {"greater_and_less_than_10" => []"less_than_10" => []}
+  hash = {"greater_and_less_than_10" => [] "less_than_10" => []}
   array.each do |number|
     if number > 10
       hash["greater_and_less_than_10"] << number
