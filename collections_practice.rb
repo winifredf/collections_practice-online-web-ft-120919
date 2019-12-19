@@ -3,7 +3,7 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  array.sort {|x,y| y <=> x}
+  array.sort {|num1,num2| num2 <=> num1}
 end
 
 def swap_elements(array)
