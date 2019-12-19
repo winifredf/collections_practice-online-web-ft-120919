@@ -29,10 +29,6 @@ def reverse_array(array)
   new_array
 end
 
-def 
-
-
-
 def find_a
   array.select{|string| string.start_with?("a")}
 end
