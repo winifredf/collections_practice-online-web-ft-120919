@@ -29,13 +29,15 @@ def reverse_array(array)
   new_array
 end
 
+def 
+
+
+
 def find_a(array)
-  array.collect.with.index do |word, index|
-    if index == 1
-      word
-    else
-      word + "s"
-    end
-  end
+  array.select{|string| string.start_with?("a")}
+end
+
+def sum_array(numbers)
+  numbers.inject{|sum, n| sum + n}
 end
 
