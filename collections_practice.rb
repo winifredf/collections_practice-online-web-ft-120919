@@ -33,7 +33,7 @@ def
 
 
 
-def find_a(array)
+def find_a(string)
   array.select{|string| string.start_with?("a")}
 end
 
